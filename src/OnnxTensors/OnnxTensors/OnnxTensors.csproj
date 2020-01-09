@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Memory" Version="4.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Numerics.Tensors">
+      <HintPath>..\..\..\Lib\System.Numerics.Tensors.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

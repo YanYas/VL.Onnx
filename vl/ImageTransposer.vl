@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Ctcz8CPlBdzNmvxvURmcck" LanguageVersion="2019.1.0-0889-g2c8c66dd08" Version="0.128">
-  <NugetDependency Id="LkWLgdCUylqMVRenGZumK9" Location="VL.CoreLib" Version="2019.1.0-562" />
+<Document xmlns:p="property" Id="Ctcz8CPlBdzNmvxvURmcck" LanguageVersion="2019.2.0-0125-246fa2a747" Version="0.128">
+  <NugetDependency Id="LkWLgdCUylqMVRenGZumK9" Location="VL.CoreLib" Version="2019.2.0-0125-g246fa2a747" />
   <Patch Id="CAoZzSW4I75PxbpNCX3CDN">
     <Canvas Id="NBDUMJtWmbrPsfHJYOmixF" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -137,7 +137,7 @@
                   <ControlPoint Id="BvG68byFcNeM3M7lOHdl7U" Bounds="749,918" Alignment="Bottom" />
                 </Node>
                 <Pad Id="JEiQMB9wla4N2njJOE4kVR" Comment="" Bounds="749,771" isIOBox="true" />
-                <Node Bounds="658,528,294,180" Id="U6SVDBXrnakNQFK7MOqyRA">
+                <Node Bounds="658,528,290,180" Id="U6SVDBXrnakNQFK7MOqyRA">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -148,18 +148,6 @@
                     <Patch Id="FIYebChBOW5MmRnv5d9h6P" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="CGVRDSHZ68sNTX8RizmwGp" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="GzTJWx0OQ7JNByKIEDUCHU" Name="Dispose" ManuallySortedPins="true" />
-                    <Node Bounds="787,602,72,26" Id="GbXjXhmEEw9Lkq4tcsxIYt">
-                      <p:NodeReference LastCategoryFullName="System.Numerics.Tensors.DenseTensor`1" LastSymbolSource="System.Numerics.Tensors.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="AssemblyCategory" Name="DenseTensor`1" />
-                        <Choice Kind="OperationCallFlag" Name="Create" />
-                        <PinReference Kind="InputPin" Name="Memory" />
-                      </p:NodeReference>
-                      <Pin Id="B4BJw7OqLSTPRTw83CBCAm" Name="Memory" Kind="InputPin" />
-                      <Pin Id="G6fcIHr8XxYQKmwNm8gf2O" Name="Dimensions" Kind="InputPin" />
-                      <Pin Id="Uro7gwNjNgbPdfDmDAoySk" Name="Reverse Stride" Kind="InputPin" />
-                      <Pin Id="U6uK7REWivuPcG9Gw1pjxs" Name="Output" Kind="StateOutputPin" />
-                    </Node>
                     <Node Bounds="787,559,54,26" Id="OOgPOAD80VZPKBJFUxC9LB">
                       <p:NodeReference LastCategoryFullName="System.Memory`1" LastSymbolSource="System.Memory.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -168,23 +156,6 @@
                       </p:NodeReference>
                       <Pin Id="OPedqOUQEl9OPVSi6ikjoO" Name="Array" Kind="InputPin" />
                       <Pin Id="CQtKsSNuo79Lq7KVZlM7vO" Name="Output" Kind="StateOutputPin" />
-                    </Node>
-                    <Node Bounds="847,559,93,19" Id="IZbgt0iUUwZN09mrp4mnm0">
-                      <p:NodeReference LastCategoryFullName="System.ReadOnlySpan`1" LastSymbolSource="System.Memory.dll">
-                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <Choice Kind="OperationCallFlag" Name="ToReadOnlySpan" />
-                        <CategoryReference Kind="AssemblyCategory" Name="ReadOnlySpan`1" NeedsToBeDirectParent="true" />
-                        <PinReference Kind="InputPin" Name="Input">
-                          <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System" LastSymbolSource="mscorlib.dll">
-                            <Choice Kind="TypeFlag" Name="Array`1" />
-                            <p:TypeArguments>
-                              <TypeParameterReference />
-                            </p:TypeArguments>
-                          </p:DataTypeReference>
-                        </PinReference>
-                      </p:NodeReference>
-                      <Pin Id="JGxZA4OfUz3O9ExbZUrZa8" Name="Input" Kind="InputPin" />
-                      <Pin Id="InLGUzXcuFoNGZzGT3u1VK" Name="Result" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="745,654,100,19" Id="OrGt07v4YKmQZWzpavB07H">
                       <p:NodeReference LastCategoryFullName="Microsoft.ML.OnnxRuntime.NamedOnnxValue" LastSymbolSource="Microsoft.ML.OnnxRuntime.dll">
@@ -206,6 +177,18 @@
                       <Pin Id="RxDGenaT3wjPLMd4N11Q5Z" Name="Default Value" Kind="InputPin" />
                       <Pin Id="PlzHpjDs8AiOfve2TO6tNQ" Name="Output" Kind="StateOutputPin" />
                       <Pin Id="JkeoMjl857RMh6Isgq1kHy" Name="Result" Kind="OutputPin" />
+                    </Node>
+                    <Node Bounds="840,610,96,19" Id="F94Nme4ZzztMVk11zERLMF">
+                      <p:NodeReference LastCategoryFullName="VL.ONNX.OnnxTensors`1" LastSymbolSource="OnnxTensors.dll">
+                        <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                        <CategoryReference Kind="AssemblyCategory" Name="VL" />
+                        <CategoryReference Kind="AssemblyCategory" Name="ONNX" />
+                        <CategoryReference Kind="AssemblyCategory" Name="OnnxTensors`1" />
+                        <Choice Kind="OperationCallFlag" Name="CreateNewTensor" />
+                      </p:NodeReference>
+                      <Pin Id="Fn3Ed11HF3wPXM8kFkKFqn" Name="Input Data" Kind="InputPin" />
+                      <Pin Id="VfAYYZlTwH5NOC2GPMoLgf" Name="Dimensions" Kind="InputPin" />
+                      <Pin Id="LNogXix0zCUMlDAJ9PGV9G" Name="Result" Kind="OutputPin" />
                     </Node>
                   </Patch>
                   <ControlPoint Id="GTisD6WlZuPPi59Gdm0G00" Bounds="746,702" Alignment="Bottom" />
@@ -372,9 +355,6 @@
           <Link Id="QEFa6utwonrLDkCFW959I4" Ids="DMUZtOQAakhOsikkJTi5gh,OdGt46sW1hjN9sxwRgUOwd" />
           <Link Id="Pi4P1mRhgXyOHB4DJyGb6J" Ids="INFeboPgcuANe5ed14o5K5,JEiQMB9wla4N2njJOE4kVR" />
           <Link Id="JPih7Tt0Mc7MxteHEirc0K" Ids="JEiQMB9wla4N2njJOE4kVR,DMUZtOQAakhOsikkJTi5gh" />
-          <Link Id="SonBgtNxiKoOSoIRb2pxSS" Ids="CQtKsSNuo79Lq7KVZlM7vO,B4BJw7OqLSTPRTw83CBCAm" />
-          <Link Id="VEIDIAjmVrQLW46jWUOKpD" Ids="InLGUzXcuFoNGZzGT3u1VK,G6fcIHr8XxYQKmwNm8gf2O" />
-          <Link Id="GD0WqRyV9KXP1X1iVCyCLW" Ids="U6uK7REWivuPcG9Gw1pjxs,CQnjqaYh0VuN3kfO8A8NOE" />
           <Link Id="MQ5Y3h1zKwhLXjP1u1EeUO" Ids="JkeoMjl857RMh6Isgq1kHy,UhRP0V2O9GIQA9Ej6TEZYF" />
           <Link Id="PwL1I2pDY4YQW6BXEWcMNk" Ids="HpRkSX0HpMTLhjBfKA9f2x,GTisD6WlZuPPi59Gdm0G00" />
           <Link Id="Kol6WTxEY5KNbiXfUi09AZ" Ids="GTisD6WlZuPPi59Gdm0G00,LTjFrdLRlgpLOJrv3GYdHC" />
@@ -400,7 +380,9 @@
           <Link Id="KNsMCGfUy7pL2Pw3FL3BfH" Ids="GndZsz9ee03LRjiASK4OvY,VuDo1DSwx55PC6eqkWkQzg" />
           <Link Id="Lrs0o5uO3U9LIqolPkCMYB" Ids="VUAZWIFp3ikO8VpFREjBpZ,VWelbJyF529Ms81xIAxSbx" />
           <Link Id="EAZi9smZ5EPPS2cYAriihC" Ids="Bcqighvvs2tPGDzTTaVEKv,JGG93HT0Uc8Nbepo788BCk" />
-          <Link Id="GCZUYPqDG31Mxi4l9AaxFQ" Ids="Bcqighvvs2tPGDzTTaVEKv,JGxZA4OfUz3O9ExbZUrZa8" />
+          <Link Id="J1A7WKDVezvMswK1QCtQqZ" Ids="CQtKsSNuo79Lq7KVZlM7vO,Fn3Ed11HF3wPXM8kFkKFqn" />
+          <Link Id="EPldtpB0QUnL3v9qvVCsWu" Ids="Bcqighvvs2tPGDzTTaVEKv,VfAYYZlTwH5NOC2GPMoLgf" />
+          <Link Id="UyWF3VYJ9ewPayojDHHfNr" Ids="LNogXix0zCUMlDAJ9PGV9G,CQnjqaYh0VuN3kfO8A8NOE" />
         </Patch>
       </Node>
       <!--
@@ -722,4 +704,5 @@
   <PlatformDependency Id="NX1Uyt4yBWjMlc8l9wmepO" Location="../Lib/Microsoft.ML.OnnxRuntime.dll" />
   <PlatformDependency Id="NlPhECqfHyoL6IsDtLxb11" Location="../Lib/System.Memory.dll" />
   <PlatformDependency Id="VH0QnSQPjj8MrbOlCGTDFW" Location="../Lib/System.Numerics.Tensors.dll" />
+  <PlatformDependency Id="V1s56HL9kkaNEPBklMfvkH" Location="../src/OnnxTensors/OnnxTensors/bin/Debug/netstandard2.0/OnnxTensors.dll" />
 </Document>
